@@ -148,3 +148,31 @@ if (koalaAvg > 100) {
     Points: ${koalaAvg}`)
 }
 
+
+// Switch Statement (becoming less and less used)
+
+const day = 'monday';
+
+switch(day) {
+    case 'monday': // day === 'monday'
+        console.log('Plan course structure');
+        console.log('Go to coding meetup');
+        break;
+    case 'tuesday':
+        console.log('Prepare theory videos');
+        break;
+    case 'wednesday':
+    case 'thursday':
+        console.group('Write code examples');
+        break;
+    case 'friday':
+        console.log('Record videos');
+        break;
+    case 'saturday':
+    case 'sunday':
+        console.log('Enjoy the weekend :)');
+        break;
+    default:
+        console.log('Not a valid day!');
+}
+
