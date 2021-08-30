@@ -181,5 +181,21 @@ const new_age = 15;
 new_age >= 18 ? console.log('I like to drink wine') :
 console.log('I like to drink water')
 
+const drink = age;
+if (age >= 18) {
+    drink2 = 'wine';
+} else {
+    drink2 = 'water'
+}
 
+console.log(drink2);
+
+
+// Coding challenge #4
+
+const bill_value = 275;
+const tip = bill_value > 300 || bill_value < 50 ? bill_value * .2 :
+bill_value * .15;
+
+console.log(`The bill was $${bill_value}, the tip was $${tip}, and the total value $${bill_value + tip}`);
 
