@@ -118,5 +118,31 @@ const checkWinner = (avgKoalas, avgDolphins) => {
 
 checkWinner(avgKoalas, avgDolphins);
 
-   
-    
+// Arrays
+
+const friends = ['Micheal', 'Steven', 'Peter'];
+console.log(friends);
+
+const years = new Array(1991, 1984, 2009, 2020);
+console.log(years);
+
+// Basic Array Operators (Methods)
+
+friends.push('Kristen');
+console.log(friends);
+
+friends.unshift("John");
+console.log(friends);
+
+friends.pop(); //removes the last element
+const popped = friends.pop();
+console.log(friends);
+
+friends.shift(); //removes first element
+console.log(friends);
+
+console.log(friends.indexOf('Peter'));
+console.log(friends.includes('Bob'));
+
+// can use includes method to write conditionals
+
