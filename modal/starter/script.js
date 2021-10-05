@@ -28,10 +28,8 @@ overlay.addEventListener('click', closeModal);
 
 // this function will be executed whenever a key is pressed
 document.addEventListener('keydown', function(event) {
-    if (event.key === 'Escape') {
+    if (event.key === 'Escape'&& !modal.classList.contains('hidden')) {
         // if modal does NOT include hidden class then close the modal
-        if (!modal.classList.contains('hidden')) {
-            closeModal();
-        }
+        closeModal();
     }
 });
