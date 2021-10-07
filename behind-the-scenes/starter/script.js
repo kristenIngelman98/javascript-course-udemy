@@ -51,8 +51,19 @@ const jonas = {
     calcAge: function() {
         console.log(this);
         console.log(2037 - this.year)
-    }
+
+        // const self = this;
+        const isMillenial = () => {
+            console.log(this)
+            console.log(this.year >= 1981 && this.year <= 1996)
+        };
+        isMillenial();
+    },
+
+    greet: () => console.log(`Hey ${this.year}`)
 };
+ 
+jonas.greet();
 
 jonas.calcAge();
 
@@ -62,3 +73,7 @@ const matilda = {
 
 matilda.calcAge = jonas.calcAge;
 matilda.calcAge();
+
+const f = jonas.calcAge;
+
+console.log(f);
