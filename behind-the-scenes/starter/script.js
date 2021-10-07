@@ -11,6 +11,13 @@ function calcAge(birthYear) {
             const str = `Oh, you are a millenial, ${firstName}`
             console.log(str);
         }
+
+        function add(a,b) {
+            console.log(a+b)
+            return a + b;
+        }
+
+        add(5,4); //can have this outside the block scope when 'use strict' is turned off
     }
 
     printAge();
@@ -19,3 +26,7 @@ function calcAge(birthYear) {
 
 const firstName = 'Kristen';
 calcAge(1995);
+
+var me = 'Jonas';
+let job = 'teacher';
+const year = 1991;
