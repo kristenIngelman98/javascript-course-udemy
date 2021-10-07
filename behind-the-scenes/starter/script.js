@@ -77,3 +77,34 @@ matilda.calcAge();
 const f = jonas.calcAge;
 
 console.log(f);
+// Primitive Types
+let lastName = 'Ingelman';
+let oldLastName = lastName;
+lastName = 'Davis';
+
+console.log(lastName);
+console.log("old last name: " + oldLastName);
+
+// Reference Types
+const jessica = {
+    firstName: 'Jessica',
+    lastName: 'Williams',
+    age: 27
+};
+
+const marriedJessica = jessica; //copying reference which will point to the same object
+marriedJessica.lastName = 'Davis';
+console.log("before married: ", jessica);
+console.log("after marriage: ", marriedJessica);
+
+const jessica2 = {
+    firstName: 'Jessica',
+    lastName: 'Williams',
+    age: 27,
+    family: ['Alice', 'Bob'],
+};
+
+const jessicaCopy = Object.assign({}, jessica2);
+jessicaCopy.lastName = 'Davis';
+console.log("before marriage: ", jessica2);
+console.log("after marriage: ", jessicaCopy)
